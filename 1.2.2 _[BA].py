@@ -11,7 +11,7 @@ color = "blue"
 score = 0
 
 font_setup = ("Arial", 20, "normal")
-timer = 5
+timer = 30
 bennadict_interval = 1000   #1000 represents 1 second
 timer_up = False
 
@@ -42,6 +42,12 @@ def turtle_click(x,y):
     score_counter()
     rad_colors()
     go()
+    rad_size()
+
+# costumization to change turtle size
+def rad_size():
+    new_size = random.randint(1,50)
+    thickums.shapesize(new_size)
 
 # this is a costumization it makes the turtle change colors when clicked and the backround
 def rad_colors():
